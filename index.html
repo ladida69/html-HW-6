@@ -382,21 +382,38 @@
           <ul>
             <p>Залиште свої дані, ми вам передзвонимо</p>
 
-            <li >
-              <label for="name" class="form-field">Ім'я <input type="text" name="name" /></label>
+            <li>
+              <label for="name" class="form-field"
+                >Ім'я <input class="form-input" type="text" name="name" /><svg class="modal-svg">
+                  <use href="./images/modal-icns.svg#icon-name"></use>
+                </svg>
+              </label>
             </li>
-            <li class="form-field">
-              <label for="tel">Телефон</label> <input type="tel" name="tel" id="tel" />
+            <li>
+              <label for="tel" class="form-field"
+                >Телефон <input class="form-input" type="tel" name="tel" /><svg class="modal-svg">
+                  <use href="./images/modal-icns.svg#icon-phone"></use></svg
+              ></label>
             </li>
-            <li class="form-field">
-              <label for="mail">Пошта</label> <input type="email" name="mail" id="mail" />
+            <li>
+              <label for="mail" class="form-field"
+                >Пошта <input class="form-input" type="email" name="mail" /><svg class="modal-svg">
+                  <use href="./images/modal-icns.svg#icon-email"></use></svg
+              ></label>
             </li>
-            <li class="form-field">
-              <label for="text">Коментар</label>
-              <input type="text" name="text" id="text" placeholder="Введіть текст" />
+            <li>
+              <label for="comment" class="form-field"
+                >Коментар
+                <textarea
+                  type="comment"
+                  name="comment"
+                  rows="10"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </label>
             </li>
           </ul>
-          <button type="submit">Відправити</button>
+          <button class="submit-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
