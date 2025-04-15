@@ -902,29 +902,46 @@ textarea {
 }
 
 .subscribe-us-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  display: inline;
+  top: 50%;
+  right: -50%;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
+  width: fit-content;
 }
-.subscribe {
-  display: inline-block;
+.subscribe-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  width: fit-content;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 20px;
 }
 .subscribe-us {
-  background-color: rgba(47, 48, 58, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: rgba(0, 0, 0, 0.15);
+  background-color: rgba(47, 48, 58, 1);
+  color: inherit;
   border-radius: 4px;
-  padding: 15px 0px 15px 16px;
-  width: 100%;
+  padding: 15px 16px 15px 16px;
+  width: 358px;
+  height: 50px;
+  outline: none;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .subscribe-us-btn {
   position: relative;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  align-items: center;
+  margin-left: 12px;
+  width: fit-content;
   font-weight: 700;
   font-size: 16px;
+  background-color: var(--accent-color);
   line-height: 2.14;
   letter-spacing: 6%;
   background-color: var(--accent-color);
@@ -933,11 +950,15 @@ textarea {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-hover-color);
+  }
 }
 
 .subscribe-svg {
-  display: inline-block;
   position: absolute;
+  width: fit-content;
   top: 50%;
   right: -60%;
   transform: translateY(-50%);
